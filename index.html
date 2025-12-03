@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phạm Minh Thư | Bác sĩ Thú y & Nhà nghiên cứu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'warm-bg': '#F5F2EA',       /* Warm Beige / Paper */
+                        'warm-primary': '#8D5B4C',  /* Terracotta / Rust */
+                        'warm-secondary': '#A08876', /* Muted Brown */
+                        'warm-dark': '#3E322C',     /* Dark Coffee */
+                        'warm-accent': '#D4A373',   /* Muted Gold */
+                        'warm-light': '#FFFFFF',
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Nunito Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F5F2EA;
+            color: #3E322C;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased smooth-scroll">
+
+    <!-- Navigation -->
+    <nav class="bg-warm-bg/95 backdrop-blur fixed w-full z-50 border-b border-warm-secondary/20 transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-serif text-2xl font-bold text-warm-primary tracking-tight">
+                        Phạm Minh Thư<span class="text-warm-secondary">.</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="text-warm-dark hover:text-warm-primary px-3 py-2 rounded-md text-sm font-medium transition">Giới thiệu</a>
+                    <a href="#philosophy" class="text-warm-dark hover:text-warm-primary px-3 py-2 rounded-md text-sm font-medium transition">Triết lý</a>
+                    <a href="#expertise" class="text-warm-dark hover:text-warm-primary px-3 py-2 rounded-md text-sm font-medium transition">Chuyên môn</a>
+                    <a href="#blog" class="text-warm-dark hover:text-warm-primary px-3 py-2 rounded-md text-sm font-medium transition">Knowledge Hub</a>
+                    <a href="#contact" class="bg-warm-primary text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-warm-dark transition shadow-md">Liên hệ</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-warm-dark hover:text-warm-primary focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-warm-bg border-b border-warm-secondary/20">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-warm-dark hover:text-warm-primary hover:bg-warm-secondary/10">Giới thiệu</a>
+                <a href="#philosophy" class="block px-3 py-2 rounded-md text-base font-medium text-warm-dark hover:text-warm-primary hover:bg-warm-secondary/10">Triết lý</a>
+                <a href="#expertise" class="block px-3 py-2 rounded-md text-base font-medium text-warm-dark hover:text-warm-primary hover:bg-warm-secondary/10">Chuyên môn</a>
+                <a href="#blog" class="block px-3 py-2 rounded-md text-base font-medium text-warm-dark hover:text-warm-primary hover:bg-warm-secondary/10">Knowledge Hub</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-warm-primary font-bold">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 fade-in-up">
+                    <span class="block text-warm-primary font-serif italic text-lg mb-2">Chào bạn, tôi là</span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-warm-dark mb-6 leading-tight">
+                        Phạm Minh Thư
+                    </h1>
+                    <p class="text-lg sm:text-xl text-warm-secondary font-medium mb-6">
+                        Bác sĩ Thú y & Nhà nghiên cứu độc lập
+                    </p>
+                    <div class="prose text-warm-dark/80 leading-relaxed mb-8">
+                        <p class="mb-4">
+                            Tôi là một Bác sĩ Thú y và nhà nghiên cứu độc lập với niềm đam mê sâu sắc dành cho Y sinh học. 
+                            Trong suốt <span class="font-bold text-warm-primary">16 năm</span> hoạt động chuyên môn, tôi không chỉ dừng lại ở việc chẩn đoán và điều trị lâm sàng, 
+                            mà luôn khao khát đi tìm đến nguyên nhân nguyên phát gây bệnh.
+                        </p>
+                        <p>
+                            Trang web này là nơi tôi lưu trữ và chia sẻ những nghiên cứu chuyên sâu, các ca bệnh điển hình 
+                            và những cập nhật mới nhất về dược lý cũng như dịch tễ học thú y.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="px-8 py-3 bg-warm-primary text-white rounded-md hover:bg-warm-dark transition shadow-lg font-medium">
+                            Kết nối với tôi
+                        </a>
+                        <a href="#blog" class="px-8 py-3 border border-warm-primary text-warm-primary rounded-md hover:bg-warm-primary hover:text-white transition font-medium">
+                            Đọc nghiên cứu
+                        </a>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 relative fade-in-up">
+                    <div class="absolute -inset-4 bg-warm-accent/20 rounded-tr-[50px] rounded-bl-[50px] blur-lg"></div>
+                    <div class="relative rounded-tr-[50px] rounded-bl-[50px] overflow-hidden shadow-2xl aspect-[4/5] lg:aspect-[3/4]">
+                        <!-- Placeholder for Headshot -->
+                        <img src="https://i.ibb.co/B5DQRk9d/Thu.png" alt="Phạm Minh Thư - Bác sĩ thú y" class="w-full h-full object-cover hover:scale-105 transition duration-700">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats / Quick Info Banner -->
+    <div class="bg-warm-dark text-warm-bg py-12 border-y-4 border-warm-accent">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-4">
+                    <span class="block text-4xl font-serif font-bold text-warm-accent mb-2">16+</span>
+                    <span class="text-sm uppercase tracking-wider opacity-80">Năm kinh nghiệm</span>
+                </div>
+                <div class="p-4 border-t md:border-t-0 md:border-l border-white/10">
+                    <span class="block text-4xl font-serif font-bold text-warm-accent mb-2">Dược lý</span>
+                    <span class="text-sm uppercase tracking-wider opacity-80">Nghiên cứu chuyên sâu</span>
+                </div>
+                <div class="p-4 border-t md:border-t-0 md:border-l border-white/10">
+                    <span class="block text-4xl font-serif font-bold text-warm-accent mb-2">Tác giả</span>
+                    <span class="text-sm uppercase tracking-wider opacity-80">Sách chuyên ngành</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <svg class="h-12 w-12 text-warm-primary/30 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21L14.017 18C14.017 16.8954 13.1216 16 12.017 16H9.01699V15C9.01699 13.1313 10.079 11.4336 11.7317 10.6436C12.2715 10.3856 12.4986 9.74046 12.2406 9.20068C11.9826 8.6609 11.3375 8.43381 10.7977 8.69178C8.34079 9.86619 6.77008 12.3765 6.77008 15.1691V19C6.77008 20.1046 7.66551 21 8.77008 21H14.017ZM21.017 21L21.017 18C21.017 16.8954 20.1216 16 19.017 16H16.017V15C16.017 13.1313 17.079 11.4336 18.7317 10.6436C19.2715 10.3856 19.4986 9.74046 19.2406 9.20068C18.9826 8.6609 18.3375 8.43381 17.7977 8.69178C15.3408 9.86619 13.7701 12.3765 13.7701 15.1691V19C13.7701 20.1046 14.6655 21 15.7701 21H21.017Z" />
+            </svg>
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-warm-dark mb-8">Y học dựa trên bằng chứng</h2>
+            <p class="text-xl text-warm-dark/80 leading-relaxed italic font-serif">
+                "Phương châm làm việc của tôi là <span class="text-warm-primary font-bold">Evidence-based Medicine</span>. Dù là một quyết định lựa chọn dược chất trong điều trị hay phân tích một biến chủng virus mới, tôi đều tin rằng sự chính xác phải được xây dựng trên nền tảng dữ liệu khoa học vững chắc."
+            </p>
+            <div class="mt-8">
+                <span class="inline-block w-24 h-1 bg-warm-primary rounded-full"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-20 bg-warm-bg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-warm-primary font-bold tracking-wider uppercase text-sm">Lĩnh vực hoạt động</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-warm-dark mt-2">Danh Mục Chuyên Môn</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 border-t-4 border-warm-primary">
+                    <div class="w-14 h-14 bg-warm-bg rounded-full flex items-center justify-center mb-6 text-warm-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-warm-dark mb-3">Bác sĩ thú y thực hành</h3>
+                    <p class="text-warm-dark/70">
+                        Chẩn đoán và điều trị lâm sàng cho thú nhỏ với cam kết tìm ra nguyên nhân gốc rễ của bệnh lý.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 border-t-4 border-warm-secondary">
+                    <div class="w-14 h-14 bg-warm-bg rounded-full flex items-center justify-center mb-6 text-warm-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-warm-dark mb-3">Nghiên cứu Dược lý</h3>
+                    <p class="text-warm-dark/70">
+                        Nghiên cứu Dược lý lâm sàng và tối ưu hóa phác đồ điều trị, tập trung vào tính chính xác và hiệu quả.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 border-t-4 border-warm-accent">
+                    <div class="w-14 h-14 bg-warm-bg rounded-full flex items-center justify-center mb-6 text-warm-accent">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-warm-dark mb-3">Tác giả & Đào tạo</h3>
+                    <p class="text-warm-dark/70">
+                        Đồng tác giả sách chuyên ngành và chia sẻ kiến thức giá trị cho cộng đồng thú y.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Knowledge Hub (Blog Preview) -->
+    <section id="blog" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-warm-primary font-bold tracking-wider uppercase text-sm">Chia sẻ kiến thức</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-warm-dark mt-2">Knowledge Hub</h2>
+                </div>
+                <a href="#" class="text-warm-primary font-medium hover:text-warm-dark transition flex items-center">
+                    Xem tất cả bài viết 
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <article class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg shadow-md mb-4 aspect-video">
+                        <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=1000&auto=format&fit=crop" alt="Research Lab" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-warm-primary text-white text-xs font-bold px-3 py-1 rounded-full">Dược lý</div>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-warm-dark mb-2 group-hover:text-warm-primary transition">Tối ưu hóa phác đồ điều trị: Góc nhìn từ phòng Lab</h3>
+                    <p class="text-warm-dark/70 text-sm mb-4 line-clamp-3">
+                        Phân tích sâu về tương tác thuốc và cách lựa chọn dược chất phù hợp cho từng ca bệnh cụ thể dựa trên bằng chứng lâm sàng.
+                    </p>
+                    <span class="text-warm-secondary text-sm font-medium">15 Tháng 5, 2024</span>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg shadow-md mb-4 aspect-video">
+                        <img src="https://images.unsplash.com/photo-1584036561566-b93cae365073?q=80&w=1000&auto=format&fit=crop" alt="Microscope" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-warm-primary text-white text-xs font-bold px-3 py-1 rounded-full">Dịch tễ học</div>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-warm-dark mb-2 group-hover:text-warm-primary transition">Biến chủng virus mới trên thú nhỏ</h3>
+                    <p class="text-warm-dark/70 text-sm mb-4 line-clamp-3">
+                        Cập nhật những thông tin mới nhất về sự biến đổi của các chủng virus phổ biến và phương pháp phòng ngừa hiệu quả.
+                    </p>
+                    <span class="text-warm-secondary text-sm font-medium">02 Tháng 6, 2024</span>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg shadow-md mb-4 aspect-video">
+                        <img src="https://images.unsplash.com/photo-1628595351029-c2bf17511435?q=80&w=1000&auto=format&fit=crop" alt="Veterinary Clinic" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-warm-primary text-white text-xs font-bold px-3 py-1 rounded-full">Góc nhìn</div>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-warm-dark mb-2 group-hover:text-warm-primary transition">Hành trình 16 năm với nghề</h3>
+                    <p class="text-warm-dark/70 text-sm mb-4 line-clamp-3">
+                        Những suy ngẫm về nghề Y thú y, từ những ngày đầu thực hành đến khao khát nghiên cứu chuyên sâu.
+                    </p>
+                    <span class="text-warm-secondary text-sm font-medium">10 Tháng 6, 2024</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-warm-dark text-warm-bg relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <pattern id="pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <circle cx="2" cy="2" r="1" fill="currentColor" />
+                </pattern>
+                <rect width="100%" height="100%" fill="url(#pattern)" />
+            </svg>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Liên hệ & Hợp tác</h2>
+                    <p class="text-warm-bg/80 mb-8 leading-relaxed">
+                        Tôi luôn sẵn sàng trao đổi về các dự án nghiên cứu, ca bệnh lâm sàng hoặc các cơ hội hợp tác chuyên môn. Hãy để lại tin nhắn cho tôi.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-warm-primary flex items-center justify-center mr-4">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <span class="text-lg">contact@phamminhthu.vn</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-warm-primary flex items-center justify-center mr-4">
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </div>
+                            <span class="text-lg">LinkedIn Profile</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-warm-primary flex items-center justify-center mr-4">
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="hover:text-warm-primary transition border-b border-transparent hover:border-warm-primary">ResearchGate</a>
+                                <span class="text-warm-bg/40">|</span>
+                                <a href="#" class="hover:text-warm-primary transition border-b border-transparent hover:border-warm-primary">Google Scholar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white text-warm-dark p-8 rounded-lg shadow-lg">
+                    <form onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã liên hệ! Tôi sẽ phản hồi sớm nhất có thể.');">
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold mb-2" for="name">Họ và tên</label>
+                            <input class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-warm-primary bg-warm-bg" type="text" id="name" placeholder="Nhập tên của bạn">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold mb-2" for="email">Email</label>
+                            <input class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-warm-primary bg-warm-bg" type="email" id="email" placeholder="email@example.com">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-bold mb-2" for="message">Lời nhắn</label>
+                            <textarea class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-warm-primary bg-warm-bg" id="message" rows="4" placeholder="Nội dung tin nhắn..."></textarea>
+                        </div>
+                        <button class="w-full bg-warm-primary text-white font-bold py-3 px-4 rounded hover:bg-warm-dark transition duration-300">
+                            Gửi tin nhắn
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-warm-dark text-warm-bg/60 py-8 border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="font-serif mb-2">Phạm Minh Thư - Bác sĩ Thú y & Nhà nghiên cứu</p>
+            <p class="text-sm">&copy; 2024 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Navbar transition on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
